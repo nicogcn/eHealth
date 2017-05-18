@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="eHealth-backend">
+		<jta-data-source>java:/eHealthDS</jta-data-source>
+		<class>com.unipiloto.edu.zaix.entities.Cita</class>
+		<class>com.unipiloto.edu.zaix.entities.Consultorio</class>
+		<class>com.unipiloto.edu.zaix.entities.Enfermedade</class>
+		<class>com.unipiloto.edu.zaix.entities.Medico</class>
+		<class>com.unipiloto.edu.zaix.entities.Paciente</class>
+		<class>com.unipiloto.edu.zaix.entities.Reporte</class>
+		<class>com.unipiloto.edu.zaix.entities.Usuario</class>
+	</persistence-unit>
+</persistence>

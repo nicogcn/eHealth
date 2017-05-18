@@ -1,0 +1,17 @@
+<div>
+	<h1>Registro paciente cronico</h1>
+	<form>
+	<label>Nombre:</label>
+	<input type="text" maxlength="20" ng-model="paciente.nombre">	
+	<label>Apellido:</label>
+	<input type="text" maxlength="20" ng-model="paciente.apellido">	
+	<label>Documento:</label>
+	<input type="number" maxlength="10" min="0" ng-model="paciente.documento">	
+	<label>Telefono:</label>
+	<input type="number" maxlength="10" min="0" ng-model="paciente.telefono">	
+	<label>Enfermedad:</label>
+	<select ng-model="paciente.enfermedade.idEnfermedad" ng-options="e.idEnfermedad as e.nombre for e in enfermedades"></select>
+	<button ng-click="registrar()">Registrar</button>
+	<button ng-click="cancelar()">Cancelar</button>
+	</form>	
+</div>
